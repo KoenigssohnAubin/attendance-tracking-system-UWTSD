@@ -12,8 +12,8 @@ A App to track attendance for Student. Create as final Project for the course "S
 ## Table of Contents
 
 1. [Introduction](#Introduction)
-2. [Requirement Analysis](#Requirement Analysis)
-3. [Software Design and Development](#Software Design and Development)
-4. [Testing and Debugging](#Testing and Debugging)
+2. [Requirement Analysis](#Requirement)
+3. [Software Design and Development](#Software)
+4. [Testing and Debugging](#Testing )
 5. [Evaluation](#Evaluation)
 6. [References](#References)
