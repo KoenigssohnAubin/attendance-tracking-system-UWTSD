@@ -1,8 +1,119 @@
 class ClassroomAttendanceSystem:
     def __init__(self):
-        self.students = {}
-        self.attendance_records = {}
-        self.classroom_groups = []
+        self.students = {
+            "S2337525": {"name": "Alice Johnson", "group": "CertHE"},
+            "S2216535": {"name": "Bob Smith", "group": "CertHE"},
+            "S2014499": {"name": "Carol Davis", "group": "CertHE"},
+            "S2004186": {"name": "David Wilson", "group": "CertHE"},
+            "S2221070": {"name": "Eva Brown", "group": "CertHE"},
+            "S2016791": {"name": "Frank Miller", "group": "CertHE"},
+            "S2337005": {"name": "Alice Johnson", "group": "CertHE"},
+            "S2216035": {"name": "Baba May", "group": "CertHE"},
+            "S2010099": {"name": "Carl Dav", "group": "CertHE"},
+            "S2004586": {"name": "Ali Khan", "group": "CertHE"},
+            "S2991070": {"name": "Eva Max", "group": "CertHE"},
+            "S2016001": {"name": "Frank Kaiser", "group": "CertHE"},
+            "S2337510": {"name": "Marc Boula", "group": "CertHE"},
+            "S2200535": {"name": "Bobby Smith", "group": "CertHE"},
+            "S2000499": {"name": "Marco Davis", "group": "Level 5"},
+            "S2000186": {"name": "Davidson William", "group": "Level 5"},
+            "S2001070": {"name": "Papa Brown", "group": "Level 5"},
+            "S2000791": {"name": "Frank Miller", "group": "Level 5"},
+            "S2007525": {"name": "Samba Johnson", "group": "Level 5"},
+            "S2006535": {"name": "Bobby Smith", "group": "Level 5"},
+            "S2001499": {"name": "Carolina Davis", "group": "Level 5"},
+            "S2000189": {"name": "David Wilson", "group": "Level 5"},
+            "S2001079": {"name": "Carol Brown", "group": "Level 5"},
+            "S2000701": {"name": "Frank Miller", "group": "Level 5"},
+            "S2000009": {"name": "Marco Cameroon", "group": "Level 6"},
+            "S2000006": {"name": "David William", "group": "Level 6"},
+            "S2000070": {"name": "Papa Camara", "group": "Level 6"},
+            "S2000091": {"name": "Franky Miller", "group": "Level 6"},
+            "S2000025": {"name": "Samba Papa", "group": "Level 6"},
+            "S2000035": {"name": "Bobby Smith", "group": "Level 6"},
+            "S2000099": {"name": "Carol Dave", "group": "Level 6"},
+            "S2000019": {"name": "David Will", "group": "Level 6"},
+            "S2000079": {"name": "Carol Brown", "group": "Level 6"},
+            "S2000001": {"name": "Frank Midland", "group": "Level 6"},
+
+        }
+        self.attendance_records = {
+            "13-10-2025": {
+                "S2337525": True,  # Alice present
+                "S2216535": False,  # Bob absent
+                "S2014499": True,  # Carol present
+                "S2004186": True,  # David present
+                "S2221070": False,  # Eva absent
+                "S2016791": True,  # Frank present
+                "S2337005": True,  # Alice present
+                "S2216035": True,  # Baba present
+                "S2010099": True,  # Carl present
+                "S2004586": True,  # Ali present
+                "S2991070": False,  # Eva Max absent
+                "S2016001": True,  # Frank present
+                "S2337510": False,  # Marc absent
+                "S2200535": True,  # Bobby present
+                "S2000499": True,  # Marco present
+                "S2000186": True,  # Davidson present
+                "S2001070": True,  # Papa present
+                "S2000791": False,  # Frank absent
+                "S2007525": True,  # Samba present
+                "S2006535": False,  # Bobby absent
+                "S2001499": True,  # Carolina present
+                "S2000189": False,  # David absent
+                "S20001079": False,  # Carol absent
+                "S2000701": True,  # Frank Miller present
+                "S2000009": True,  # Marco absent
+                "S2000006": True,  # David William present
+                "S2000070": True,  # Papa Camara present
+                "S2000091": False,  # Franky absent
+                "S2000025": True,  # Samba present
+                "S2000035": True,  # Bobby Smith present
+                "S2000099": False,  # Carol Dave absent
+                "S2000019": False,  # David Will absent
+                "S2000079": False,  # Carol Brown absent
+                "S2000001": False,  # Frank Midland absent
+            },
+            "14-10-2025": {
+                "S2337525": True,  # Alice present
+                "S2216535": False,  # Bob absent
+                "S2014499": True,  # Carol present
+                "S2004186": True,  # David present
+                "S2221070": False,  # Eva absent
+                "S2016791": True,  # Frank present
+                "S2337005": True,  # Alice present
+                "S2216035": True,  # Baba present
+                "S2010099": True,  # Carl present
+                "S2004586": True,  # Ali present
+                "S2991070": False,  # Eva Max absent
+                "S2016001": True,  # Frank present
+                "S2337510": False,  # Marc absent
+                "S2200535": True,  # Bobby present
+                "S2000499": True,  # Marco present
+                "S2000186": True,  # Davidson present
+                "S2001070": True,  # Papa present
+                "S2000791": False,  # Frank absent
+                "S2007525": True,  # Samba present
+                "S2006535": True,  # Bobby present
+                "S2001499": True,  # Carolina present
+                "S2000189": False,  # David absent
+                "S20001079": False,  # Carol absent
+                "S2000701": True,  # Frank Miller present
+                "S2000009": True,  # Marco absent
+                "S2000006": True,  # David William present
+                "S2000070": True,  # Papa Camara present
+                "S2000091": False,  # Franky absent
+                "S2000025": True,  # Samba present
+                "S2000035": True,  # Bobby Smith present
+                "S2000099": True,  # Carol Dave present
+                "S2000019": False,  # David Will absent
+                "S2000079": False,  # Carol Brown absent
+                "S2000001": True,  # Frank Midland present
+
+            }
+        }
+
+        self.classroom_groups = ["CertHE", "Level 5", "Level 6"]
 
     def display_menu(self):
         """Display the main menu interface"""
