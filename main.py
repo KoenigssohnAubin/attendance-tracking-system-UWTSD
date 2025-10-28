@@ -117,19 +117,23 @@ class ClassroomAttendanceSystem:
 
     def display_menu(self):
         """Display the main menu interface"""
-        print("\n" + "=" * 40)
-        print("    CLASSROOM ATTENDANCE SYSTEM")
-        print("=" * 40)
-        print("1. Add New Classroom Group")
-        print("2. Add Student to Group")
-        print("3. Record Attendance")
-        print("4. View Attendance by Date")
-        print("5. Search Student Attendance")
-        print("6. Search Group Attendance")
-        print("7. Delete Student")
-        print("8. Delete Classroom Group")
-        print("9. Exit System")
-        print("=" * 40)
+        print("\n" + "=" * 45)
+        print(" CLASSROOM ATTENDANCE SYSTEM by KOENIGSSOHN")
+        print("=" * 45)
+
+        print("Please select an option from the menu:")
+
+        print("\n" + "*" * 45)
+        print("1. Add new classroom Group")
+        print("2. Add new students to Group")
+        print("3. Record attendance")
+        print("4. View:   'attendance records'")
+        print("5. Search: 'student attendance'")
+        print("6. Search: 'group attendance'")
+        print("7. Delete student")
+        print("8. Delete classroom group")
+        print("9. EXIT SYSTEM ")
+        print("\n" + "*" * 45)
 
     def add_classroom_group(self):
         """Add a new classroom group to the system"""
@@ -315,7 +319,7 @@ class ClassroomAttendanceSystem:
 
     def delete_student(self):
         """Delete a student and their attendance records"""
-        student_id = input("Enter student ID to delete: ").strip()
+        student_id = input("Enter student ID or Name to delete: ").strip()
 
         if student_id not in self.students:
             print("Error: Student not found!")
@@ -378,7 +382,7 @@ class ClassroomAttendanceSystem:
 
     def run(self):
         """Main program loop"""
-        print("Welcome to the Classroom Attendance System!")
+        print("Welcome to the Classroom Attendance System by KOENIGSSOHN!")
 
         while True:
             self.display_menu()
@@ -401,7 +405,7 @@ class ClassroomAttendanceSystem:
             elif user_choice == "8":
                 self.delete_classroom_group()
             elif user_choice == "9":
-                print("\nThank you for using the Classroom Attendance System. Goodbye!")
+                print("\nThank you for using the Classroom Attendance System by KOENIGSSOHN. Goodbye!")
                 break
             else:
                 print("Invalid choice! Please enter a number between 1-9.")
@@ -415,6 +419,7 @@ if __name__ == "__main__":
         system = ClassroomAttendanceSystem()
         system.run()
     except KeyboardInterrupt:
-        print("\n\nProgram interrupted by user. Goodbye!")
+        print("\n\nProgram interrupted by user. Thank You for using Bright Might Attendance App by "
+              "KOENIGSSOHN Goodbye!")
     except Exception as e:
         print(f"\nAn unexpected error occurred: {e}")
