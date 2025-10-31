@@ -35,6 +35,7 @@ class ClassroomAttendanceSystem:
             "S2000019": {"name": "David Will", "group": "Level 6"},
             "S2000079": {"name": "Carol Brown", "group": "Level 6"},
             "S2000001": {"name": "Frank Midland", "group": "Level 6"},
+            "S2000008": {"name": "Bastian Wand", "group": "Level 6"}
 
         }
         self.attendance_records = {
@@ -73,6 +74,7 @@ class ClassroomAttendanceSystem:
                 "S2000019": False,  # David Will absent
                 "S2000079": False,  # Carol Brown absent
                 "S2000001": False,  # Frank Midland absent
+                "S2000008": True, # Bastian present
             },
             "14-10-2025": {
                 "S2337525": True,  # Alice present
@@ -109,6 +111,7 @@ class ClassroomAttendanceSystem:
                 "S2000019": False,  # David Will absent
                 "S2000079": False,  # Carol Brown absent
                 "S2000001": True,  # Frank Midland present
+                "S2000008": True,  # Bastian present
 
             }
         }
