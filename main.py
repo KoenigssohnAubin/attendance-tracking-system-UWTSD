@@ -10,7 +10,7 @@ class ClassroomAttendanceSystem:
             "S2337005": {"name": "Alice Johnson", "group": "CertHE"},
             "S2216035": {"name": "Baba May", "group": "CertHE"},
             "S2010099": {"name": "Carl Dav", "group": "CertHE"},
-            "S2004586": {"name": "Ali Khan", "group": "CertHE"},
+            "S2004586": {"name": "Ali Khanty Maha", "group": "CertHE"},
             "S2991070": {"name": "Eva Max", "group": "CertHE"},
             "S2016001": {"name": "Frank Kaiser", "group": "CertHE"},
             "S2337510": {"name": "Marc Boula", "group": "CertHE"},
